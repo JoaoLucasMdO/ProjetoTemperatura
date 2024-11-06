@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Gráfico de Temperatura e Umidade</title>
+    <script>
+      async function atualizarGrafico() {
+        const resposta = await fetch("/grafico.png");
+        const imagemBlob = await resposta.blob();
+        const urlImagem = URL.createObjectURL(imagemBlob);
+        const img = document.getElementById("grafico");
+        img.src = urlImagem; // Atualiza a imagem do gráfico
+      }
+
+      setInterval(atualizarGrafico, 5000); // Atualiza o gráfico a cada 5 segundos
+    </script>
+  </head>
+  <body>
+    <div id="divGraf">
+      <h2>Gráfico de Temperatura e Umidade</h2>
+
+      <img id="grafico" src="/grafico.png" alt="Gráfico" />
+    </div>
+  </body>
+</html>
