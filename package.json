@@ -1,0 +1,38 @@
+{
+  "name": "projetotemperatura",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "main.js",
+  "bin": "main.js", 
+  "pkg": {
+  "assets": [
+    "node_modules/**/*.js",
+    "api/**/*",
+    "public/**/*",
+    "path/**/*"
+  ],
+  "scripts": [
+    "main.js"
+  ]
+},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@serialport/parser-readline": "^12.0.0",
+    "axios": "^1.7.7",
+    "bluetooth-serial-port": "^3.0.2",
+    "fs": "^0.0.1-security",
+    "open": "^10.1.0",
+    "serialport": "^9.2.8",
+    "body-parser": "^1.20.3",
+    "chartjs-node-canvas": "^4.1.6",
+    "express": "^4.21.1",
+    "firebase": "^11.0.1",
+    "firebase-admin": "^12.7.0"
+  }
+}
