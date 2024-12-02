@@ -6,7 +6,7 @@
   "bin": "main.js", 
   "pkg": {
   "assets": [
-    "node_modules/**/*.js",
+    "node_modules/**/*",
     "api/**/*",
     "public/**/*",
     "path/**/*"
