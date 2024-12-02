@@ -6,9 +6,8 @@ import bodyParser from "body-parser";
 import admin from "firebase-admin";
 import { ChartJSNodeCanvas } from "chartjs-node-canvas";
 import path from "path";
+import serviceAccount from './path/to/temperaturahumidade-firebase-adminsdk-h8zuy-c08c9e58c3.json' assert { type: 'json' };
 
-// Configuração do Firebase Admin SDK
-const serviceAccount = require("./path/to/temperaturahumidade-firebase-adminsdk-h8zuy-c08c9e58c3.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
