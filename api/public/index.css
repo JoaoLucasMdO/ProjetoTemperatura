@@ -1,3 +1,54 @@
+/* Estilo geral */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Contêiner principal */
+#divGraf {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 800px;
+  width: 95%;
+}
+
+/* Título */
+#divGraf h2 {
+  font-size: 1.6em;
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+
+/* Imagem do gráfico */
 #grafico {
-  width: 60%;
+  width: 100%;
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 768px) {
+  #divGraf {
+    padding: 15px;
+  }
+
+  #divGraf h2 {
+    font-size: 1.4em;
+  }
+
+  #grafico {
+    max-height: 350px; /* Limita a altura para dispositivos menores */
+  }
 }
